@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "assignment2": {
+    "angular7assignment": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "bilwara/code/diployed/dist",
+            "outputPath": "dist/angular7assignment",
             "index": "src/home.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -58,18 +58,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "assignment2:build"
+            "browserTarget": "angular7assignment:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "assignment2:build:production"
+              "browserTarget": "angular7assignment:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "assignment2:build"
+            "browserTarget": "angular7assignment:build"
           }
         },
         "test": {
@@ -103,7 +103,7 @@
         }
       }
     },
-    "assignment2-e2e": {
+    "angular7assignment-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -112,11 +112,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "assignment2:serve"
+            "devServerTarget": "angular7assignment:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "assignment2:serve:production"
+              "devServerTarget": "angular7assignment:serve:production"
             }
           }
         },
@@ -132,5 +132,5 @@
       }
     }
   },
-  "defaultProject": "assignment2"
+  "defaultProject": "angular7assignment"
 }
